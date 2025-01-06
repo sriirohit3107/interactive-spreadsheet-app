@@ -24,7 +24,7 @@ It allows users to create, update, and delete cells in a 2D grid while using ani
 git clone https://github.com/your-repo/interactive-spreadsheet.git
 cd interactive-spreadsheet
 
-###2. Backend (server.js)
+### 2. Backend (server.js)
 Install dependencies:
 cd backend
 npm install
@@ -33,14 +33,14 @@ Run the backend server:
 npm start
 The backend server will be running on http://localhost:5000.
 
-###3. Frontend (App.js)
+### 3. Frontend (App.js)
 cd frontend
 npm install
 Run the frontend development server:
 npm start
 The frontend will be running on http://localhost:3000.
 
-###4. Database
+### 4. Database
 Make sure you have MongoDB running on your local machine or configure the database URL to a cloud service in the server.js file:
 
 mongoose.connect('mongodb://127.0.0.1:27017/interactive_spreadsheet', {
@@ -48,7 +48,7 @@ mongoose.connect('mongodb://127.0.0.1:27017/interactive_spreadsheet', {
   useUnifiedTopology: true,
 });
 
-###5. Docker (Optional)
+### 5. Docker (Optional)
 If you want to run the application inside a Docker container, you can use the provided Dockerfile.
 
 Build the Docker image:
