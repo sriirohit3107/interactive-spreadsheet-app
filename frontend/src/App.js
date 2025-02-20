@@ -12,7 +12,7 @@ const App = () => {
   const [currentHistoryIndex, setCurrentHistoryIndex] = useState(-1);
   const cellRefs = useRef([]);
 
-  useEffect(() => {
+  useEffect(() => { // fetches spreadsheet data from local API
     const fetchCells = async () => {
       const response = await fetch('http://localhost:5000/cells');
       if (response.ok) {
