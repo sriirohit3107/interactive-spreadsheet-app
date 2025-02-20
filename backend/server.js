@@ -51,19 +51,19 @@ app.post('/cells', async (req, res) => {
       // If value is an empty string, delete the cell from the database
       await Cell.deleteOne({ row, col });
       console.log('Cell deleted:', { row, col });
-      return res.json({ row, col, value: "" });  // Send empty value as response
+      return res.json({ row, col, value: "" });  
     }
 
     // Otherwise, update or create the cell
     const cell = await Cell.findOneAndUpdate(
-      { row, col },   // Search by row and column
-      { value },      // Update value
-      { new: true, upsert: true }  // Create if not found
+      { row, col },   
+      { value },      
+      { new: true, upsert: true } 
     );
-    console.log('Cell saved/updated:', cell);  // Log saved/updated cell
+    console.log('Cell saved/updated:', cell); 
     res.json(cell);
   } catch (error) {
-    console.error('Error saving cell:', error);  // Log any errors
+    console.error('Error saving cell:', error);  
     res.status(500).send('Server Error');
   }
 });
