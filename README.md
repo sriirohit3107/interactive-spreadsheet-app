@@ -70,3 +70,12 @@ Future Enhancements :
 Add export/import functionality for spreadsheets.
 Support for formulas and expressions.
 Enhanced UI/UX with more animation
+
+### Screenshots 
+
+![image](https://github.com/user-attachments/assets/1b2a0227-c599-4ae6-b9de-9226016494c7)
+
+
+![image](https://github.com/user-attachments/assets/f432aa5f-e305-4d99-addb-263967ee1d2f)
+
+
